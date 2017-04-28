@@ -35,8 +35,6 @@ const createFeed = xhr => {
     .filter(entry => entry.id && entry.title)
     .sort((a, b) => b.date - a.date)
 
-  console.log(entries)
-
   return {
     url,
     title: title ? title.textContent : url,
