@@ -1,0 +1,37 @@
+body {
+  overflow-y: scroll;
+  padding: 1em 0;
+}
+
+.list-group-item {
+  transition: all .3s ease;
+}
+
+.feed-list .badge {
+  margin-right: 1em;
+}
+
+.active .title:hover {
+  text-decoration: underline;
+}
+
+.title {
+  display: flex;
+  align-items: flex-start;
+}
+
+.title :first-child {
+  flex-grow: 1;
+}
+
+.content {
+  padding-top: 1em;
+}
+
+.content img {
+  max-width: 100%;
+}
+
+.feed-entries .label {
+  margin-left: 1em;
+}
