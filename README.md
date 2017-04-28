@@ -1,8 +1,12 @@
 # rss2late
 
+## 0h no!
+
+Yes, indeed.
+
 ## cred1ts
 
-react, electron, babel, sanitize-html, bootstrap, slate
+react, electron, babel, sanitize-html, slate (bootstrap)
 
 ## how2
 
