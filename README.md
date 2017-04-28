@@ -2,7 +2,7 @@
 
 ## cred1ts
 
-react, electron, babel, bootstrap, slate
+react, electron, babel, sanitize-html, bootstrap, slate
 
 ## how2
 

@@ -3,7 +3,7 @@ import FeedForm from './feed-form.js'
 import FeedList from './feed-list.js'
 import FeedControl from './feed-control.js'
 import FeedEntries from './feed-entries.js'
-import {updateFeeds} from '../ajax/get-feed.js'
+import {updateFeeds} from '../lib/get-feed.js'
 
 const INTERVAL = 60000
 const findCurrent = (current, feeds) => feeds.find(feed => feed.url === current)
@@ -30,7 +30,7 @@ export default class App extends Component {
     updateFeeds(this.state.feeds).then(feeds => {
       const timeout = window.setTimeout(this.scheduleUpdate, INTERVAL)
       this.setState({feeds, timeout})
-    }) 
+    })
   }
 
   componentWillMount () {
@@ -109,7 +109,7 @@ export default class App extends Component {
         <div className="row">
           <div className="col-sm-6">
             <FeedForm addFeed={this.handleAddFeed} />
-            <FeedList 
+            <FeedList
               feeds={feeds}
               current={current}
               showFeed={this.handleShowFeed}
@@ -117,11 +117,11 @@ export default class App extends Component {
             />
           </div>
           <div className="col-sm-6">
-            <FeedControl 
-              markAllRead={this.handleMarkAllRead} 
+            <FeedControl
+              markAllRead={this.handleMarkAllRead}
               current={current} />
             {currentFeed && (
-              <FeedEntries 
+              <FeedEntries
                 entries={currentFeed.entries}
                 markRead={this.handleMarkRead} />
             )}
