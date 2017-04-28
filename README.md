@@ -1,20 +1,20 @@
 # rss2late
 
-## 0h no!
+## `0`h no!
 
 Yes, indeed.
 
-## cred1ts
+## cred`1`ts
 
 react, electron, babel, sanitize-html, slate (bootstrap)
 
-## how2
+## how`2`
 
 ```
 yarn install
 yarn start
 ```
 
-## Lic3ence
+## Lic`3`nce
 
 MIT @ m3g4p0p
